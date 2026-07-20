@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
@@ -30,10 +29,18 @@ export default function HomePage() {
       <section className="categories">
         <h2>Popular categories</h2>
         <div className="category-grid">
-          <div className="category-card">Cast iron</div>
-          <div className="category-card">Non-stick</div>
-          <div className="category-card">Stainless steel</div>
-          <div className="category-card">Bakeware</div>
+          <Link href="/categories/cast-iron" className="category-card">
+            Cast iron
+          </Link>
+          <Link href="/categories/non-stick" className="category-card">
+            Non-stick
+          </Link>
+          <Link href="/categories/stainless-steel" className="category-card">
+            Stainless steel
+          </Link>
+          <Link href="/categories/bakeware" className="category-card">
+            Bakeware
+          </Link>
         </div>
       </section>
 
