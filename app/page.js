@@ -19,7 +19,11 @@ export default function HomePage() {
             Browse guides
           </Link>
         </div>
-        <div className="hero-image-placeholder" />
+        <img
+          src="/images/hero.jpg"
+          alt="Cookware on a stovetop"
+          className="hero-image"
+        />
       </section>
 
       <section className="categories">
@@ -37,7 +41,11 @@ export default function HomePage() {
         <div className="post-grid">
           {posts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="post-card">
-              <div className="post-card-image" />
+              <img
+                src={post.image || "/images/post-placeholder.jpg"}
+                alt={post.title}
+                className="post-card-image"
+              />
               <div className="post-card-body">
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
