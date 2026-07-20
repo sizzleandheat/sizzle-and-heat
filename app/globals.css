@@ -302,3 +302,7 @@ a {
   color: var(--text-muted);
   margin: 0;
 }
+.category-card:hover {
+  border-color: var(--dark);
+  background: var(--surface);
+}
