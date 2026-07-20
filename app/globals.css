@@ -6,7 +6,7 @@
   --text-muted: #8a8680;
   --border: #e7e2da;
   --surface: #faf8f5;
-  --accent-green: #3b6d11;
+  --accent-green: #2f8f3b;
   --max-width: 760px;
 }
 
@@ -115,10 +115,11 @@ a {
   margin: 0 0 24px;
 }
 
-.hero-image-placeholder {
+.hero-image {
+  width: 100%;
   height: 220px;
+  object-fit: cover;
   border-radius: 8px;
-  background: var(--surface);
   border: 1px solid var(--border);
 }
 
@@ -184,7 +185,10 @@ a {
 }
 
 .post-card-image {
+  width: 100%;
   height: 120px;
+  object-fit: cover;
+  display: block;
   background: var(--surface);
 }
 
