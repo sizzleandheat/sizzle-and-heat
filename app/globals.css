@@ -155,6 +155,13 @@ a {
   border: 1px solid var(--border);
   border-radius: 8px;
   font-size: 14px;
+  display: block;
+  color: var(--text);
+}
+
+.category-card:hover {
+  border-color: var(--dark);
+  background: var(--surface);
 }
 
 /* Post feed */
@@ -168,141 +175,3 @@ a {
   font-size: 14px;
   color: var(--text-muted);
   font-weight: 500;
-  margin: 0 0 16px;
-}
-
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.post-card {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  display: block;
-}
-
-.post-card-image {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  display: block;
-  background: var(--surface);
-}
-
-.post-card-body {
-  padding: 16px;
-}
-
-.post-card-body h3 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0 0 6px;
-}
-
-.post-card-body p {
-  font-size: 13px;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
-/* Blog list page */
-.page-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 48px 24px 80px;
-}
-
-.page-container h1 {
-  font-size: 28px;
-  margin: 0 0 32px;
-}
-
-.post-list-item {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.post-list-item h3 {
-  font-size: 18px;
-  margin: 0 0 6px;
-}
-
-.post-list-item .meta {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin: 0 0 8px;
-}
-
-.post-list-item p {
-  color: var(--text-secondary);
-  font-size: 14px;
-  margin: 0;
-}
-
-/* Single post */
-.post-header {
-  margin-bottom: 32px;
-}
-
-.post-header h1 {
-  font-size: 30px;
-  line-height: 1.3;
-  margin: 0 0 12px;
-}
-
-.post-header .meta {
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
-.post-content h2 {
-  font-size: 21px;
-  margin: 36px 0 14px;
-}
-
-.post-content p {
-  font-size: 16px;
-  color: var(--text);
-  margin: 0 0 16px;
-}
-
-.post-content ul,
-.post-content ol {
-  margin: 0 0 16px;
-  padding-left: 22px;
-}
-
-.post-content li {
-  margin-bottom: 8px;
-}
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 32px 0 48px;
-  margin-top: 40px;
-}
-
-.disclosure {
-  font-size: 12px;
-  color: var(--text-muted);
-  margin: 0 0 6px;
-  max-width: 600px;
-}
-
-.disclosure a {
-  text-decoration: underline;
-}
-
-.copyright {
-  font-size: 12px;
-  color: var(--text-muted);
-  margin: 0;
-}
-.category-card:hover {
-  border-color: var(--dark);
-  background: var(--surface);
-}
